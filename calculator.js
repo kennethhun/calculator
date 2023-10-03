@@ -23,26 +23,12 @@ function display(event) {
 
 function operationDisplay(event) {
     var oper = event.currentTarget.innerText;
-    switch(oper) {
-        case "+":
-            operation = "add";
-            document.getElementById("output").value += oper;
-            break;
-        case "-":
-            operation = "subtract";
-            document.getElementById("output").value += oper;
-            break;
-        case "*":
-            operation = "multiply";
-            document.getElementById("output").value += oper;
-            break;
-        case "/":
-            operation = "divide";
-            document.getElementById("output").value += oper;
-            break;
-        case "=":
-            calculate();
-            break;
+    if (oper == "=") {
+        calculate();
+    }
+    else {
+        operation = oper;
+        document.getElementById("output").value += oper;
     }
 }
 
@@ -59,25 +45,25 @@ function calculate() {
     const displayWhole = document.getElementById("output").value;
 
     switch(operation) {
-        case "add":
+        case "+":
             var numArray = displayWhole.split('+');
             var answer = Number(numArray[0]) + Number(numArray[1]);
 
             document.getElementById("output").value = answer;
             break;
-        case "subtract":
+        case "-":
             var numArray = displayWhole.split('-');
             var answer = Number(numArray[0]) - Number(numArray[1]);
 
             document.getElementById("output").value = answer;
             break;
-        case "multiply":
+        case "*":
             var numArray = displayWhole.split('*');
             var answer = Number(numArray[0]) * Number(numArray[1]);
 
             document.getElementById("output").value = answer;
             break;
-        case "divide":
+        case "/":
             var numArray = displayWhole.split('/');
             var answer = Number(numArray[0]) / Number(numArray[1]);
 
