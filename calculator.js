@@ -16,11 +16,13 @@ function clearScreen() {
     document.getElementById("output").value = "";
 }
 
+//displays inputted number on screen
 function display(event) {
     var number = event.currentTarget.innerText;
     document.getElementById("output").value += number;
 }
 
+//sets operation and then prints to screen
 function operationDisplay(event) {
     var oper = event.currentTarget.innerText;
     if (oper == "=") {
@@ -28,7 +30,7 @@ function operationDisplay(event) {
     }
     else {
         operation = oper;
-        document.getElementById("output").value += oper;
+        document.getElementById("output").value += (" " + oper + " ");
     }
 }
 

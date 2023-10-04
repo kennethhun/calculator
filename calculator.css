@@ -1,0 +1,51 @@
+
+.num {
+    background-color: lightgray;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .op {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .clear {
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  .calc {
+    background-color: gray;
+    text-align: center;
+  }
+
+  .boxDisplay {
+    padding: 5px 5px;
+    width: 311px;
+    height: 55px;
+    text-align: end;
+    font-size: 18px;
+    border: 5px solid gray;
+    outline-color: gray;
+  }
+
+  
+
